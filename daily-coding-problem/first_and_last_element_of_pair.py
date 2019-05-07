@@ -14,10 +14,10 @@ Implement car and cdr.
 https://stackoverflow.com/questions/52481607/dont-understand-the-inner-function-in-python
 
 Example:
->>> car(cons(3, 4))
+>>> print(car(cons(3, 4)))
 3
 
->>> cdr(cons(3, 4))
+>>> print(cdr(cons(3, 4)))
 4
 """
 

@@ -5,13 +5,13 @@ that takes an array of integers and returns an array
 of the products.
 
 Example:
->>> get_products_of_all_ints_except_at_index([3, 2, 1])
+>>> print(get_products_of_all_ints_except_at_index([3, 2, 1]))
 [2, 3, 6]
 
->>> get_products_of_all_ints_except_at_index([1, 2, 3, 4, 5])
+>>> print(get_products_of_all_ints_except_at_index([1, 2, 3, 4, 5]))
 [120, 60, 40, 30, 24]
 
->>> get_products_of_all_ints_except_at_index([1, 7, 3, 4])
+>>> print(get_products_of_all_ints_except_at_index([1, 7, 3, 4]))
 [84, 12, 28, 21]
 """
 
@@ -34,7 +34,7 @@ def get_products_of_all_ints_except_at_index(arr):
         raise IndexError('Requires at least 2 integers')
 
     # Create fixed length array to hold the products
-    products_of_all_ints_except_at_index = [None] * len(int_list)
+    products_of_all_ints_except_at_index = [None] * len(arr)
     
     # For each integer, we find the product of all the integers
     # before it, storing the total product so far each time
@@ -49,7 +49,7 @@ def get_products_of_all_ints_except_at_index(arr):
     # the total product of all other integers
     product_so_far = 1
     for i in range(len(arr) - 1, -1, -1):
-        products_of_all_ints_except_at_index[i] = product_so_far
+        products_of_all_ints_except_at_index[i] *= product_so_far
         product_so_far *= arr[i]
 
     return products_of_all_ints_except_at_index

@@ -24,5 +24,5 @@ def smallest_missing_positive_integer(arr):
     return len(arr) + 1
 
 if __name__ == '__main__':
-    print(smallest_missing_positive_integer([3, 4, -1, 1])   ) 
+    print(smallest_missing_positive_integer([3, 4, -1, 1])) 
     print(smallest_missing_positive_integer([1, 2, 0]))
