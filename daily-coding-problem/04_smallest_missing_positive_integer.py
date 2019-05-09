@@ -1,4 +1,4 @@
-"""Stripe iterview question
+"""Stripe interview question
 
 Given an array of unsorted integers, find the 
 first missing positive integer in linear time 
