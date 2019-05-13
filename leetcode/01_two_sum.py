@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -10,7 +8,7 @@ class Solution:
         Output:
         List[int]
         """
-        lookup = defaultdict()
+        lookup = dict()
         for idx, val in enumerate(nums):
             if (target - val) in lookup:
                 return [lookup[target - val], idx]
